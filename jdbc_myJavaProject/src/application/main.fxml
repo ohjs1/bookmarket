@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="380.0" prefWidth="208.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="207.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#viewList" text="목록 보기 및 책추가">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="200.0" />
+               </StackPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateUserView" text="회원정보 수정">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteUser" text="회원 삭제">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="200.0" />
+               </StackPane.margin>
+            </Button>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

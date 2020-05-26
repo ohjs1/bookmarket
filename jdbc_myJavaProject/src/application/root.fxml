@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootController">
+   <children>
+      <Pane prefHeight="338.0" prefWidth="520.0">
+         <children>
+            <Label layoutX="38.0" layoutY="43.0" text="도서관리">
+               <font>
+                  <Font size="72.0" />
+               </font>
+            </Label>
+            <Label layoutX="340.0" layoutY="86.0" text="[WEB BOOK]" textFill="#b5b0b0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textId" layoutX="151.0" layoutY="167.0" promptText="ID" />
+            <PasswordField fx:id="textPw" layoutX="151.0" layoutY="212.0" promptText="PASSWORD" />
+            <Label layoutX="307.0" layoutY="168.0" text="ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="307.0" layoutY="213.0" text="PASSWORD">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="126.0" layoutY="282.0" mnemonicParsing="false" onAction="#login" text="로그인">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="288.0" layoutY="282.0" mnemonicParsing="false" onAction="#newManager" text="관리자 추가">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

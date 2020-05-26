@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="application.ShopController" prefHeight="177.0" prefWidth="281.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="54.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="충전할 캐시를 입력">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cashChargeField" layoutX="72.0" layoutY="77.0" />
+      <Button layoutX="114.0" layoutY="127.0" mnemonicParsing="false" onAction="#cashChargeSummit" text="확인" />
+   </children>
+</AnchorPane>

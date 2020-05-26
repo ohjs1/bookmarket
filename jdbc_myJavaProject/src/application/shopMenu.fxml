@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShopController">
+   <children>
+      <Text fill="#022ac9" layoutX="145.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Button layoutX="132.0" layoutY="78.0" mnemonicParsing="false" onAction="#onShopWindow" style="-fx-background-color: blue;" text="책 상점 으로.." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="144.0" mnemonicParsing="false" onAction="#cashCharge" style="-fx-background-color: blue;" text="캐시 충전" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="149.0" layoutY="209.0" mnemonicParsing="false" onAction="#deleteUser" style="-fx-background-color: blue;" text="회원 탈퇴" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

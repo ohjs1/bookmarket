@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShopController">
+   <children>
+      <Pane layoutX="-14.0" layoutY="15.0" prefHeight="403.0" prefWidth="450.0">
+         <children>
+            <TextField fx:id="shopId" layoutX="102.0" layoutY="105.0" prefHeight="25.0" prefWidth="150.0" promptText="아이디">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <PasswordField fx:id="shopPw" layoutX="102.0" layoutY="148.0" prefHeight="25.0" prefWidth="150.0" promptText="패스워드" />
+            <TextField fx:id="shopName" layoutX="102.0" layoutY="188.0" prefHeight="25.0" prefWidth="150.0" promptText="이름">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="shopAddr" layoutX="102.0" layoutY="237.0" prefHeight="25.0" prefWidth="150.0" promptText="주소">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="shopEmail" layoutX="102.0" layoutY="288.0" prefHeight="25.0" prefWidth="150.0" promptText="이메일">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Text layoutX="263.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="아이디" wrappingWidth="42.0" />
+            <Text layoutX="260.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호" />
+            <Text layoutX="263.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="이름" />
+            <Text layoutX="263.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="주소" />
+            <Text layoutX="266.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="이메일" />
+            <Button layoutX="189.0" layoutY="341.0" mnemonicParsing="false" onAction="#shopAddUserCommit" text="등록 하기">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="75.0" layoutY="14.0" prefHeight="25.0" prefWidth="354.0" text="새로운 유저 등록">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

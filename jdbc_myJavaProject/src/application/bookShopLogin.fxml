@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="245.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShopController">
+   <children>
+      <Text layoutX="91.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="인터넷 서점">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="shopUserId" layoutX="165.0" layoutY="88.0" />
+      <Text layoutX="117.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="아이디" />
+      <Text layoutX="111.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비밀번호" />
+      <Button layoutX="109.0" layoutY="199.0" mnemonicParsing="false" onAction="#showLogin" text="로그인" />
+      <Button layoutX="234.0" layoutY="199.0" mnemonicParsing="false" onAction="#shopAddUser" text="회원가입" />
+      <PasswordField fx:id="showUserPw" layoutX="165.0" layoutY="135.0" />
+   </children>
+</AnchorPane>

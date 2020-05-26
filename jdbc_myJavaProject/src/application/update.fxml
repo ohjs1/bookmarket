@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootController">
+   <children>
+      <Text layoutX="141.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="회원 정보 수정">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <TextField fx:id="updateId" layoutX="154.0" layoutY="100.0" />
+      <Text layoutX="331.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="아이디" />
+      <PasswordField fx:id="updatePw" layoutX="154.0" layoutY="165.0" />
+      <Text layoutX="331.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="변경할 비밀번호" />
+      <TextField fx:id="updateName" layoutX="154.0" layoutY="239.0" />
+      <Text layoutX="331.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="변경할 이름" />
+      <TextField fx:id="updateAddr" layoutX="154.0" layoutY="317.0" />
+      <Text layoutX="331.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="변경할 주소" />
+      <TextField fx:id="updateEmail" layoutX="154.0" layoutY="393.0" />
+      <Text layoutX="331.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="변경할 이메일 주소" />
+      <Button layoutX="273.0" layoutY="454.0" mnemonicParsing="false" onAction="#updateUser" text="확인" />
+   </children>
+</AnchorPane>

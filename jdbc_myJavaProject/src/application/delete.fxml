@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="150.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+ fx:controller="application.RootController">
+   <children>
+      <Text layoutX="73.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="삭제할 회원 아이디" />
+      <TextField fx:id="deleteField" layoutX="56.0" layoutY="52.0" promptText="삭제할 아이디" />
+      <Button layoutX="105.0" layoutY="100.0" mnemonicParsing="false" onAction="#deleteUserSucess" text="확인" />
+   </children>
+</AnchorPane>

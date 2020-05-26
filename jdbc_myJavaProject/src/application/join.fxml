@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JoinController">
+
+   <children>
+      <TabPane prefHeight="553.0" prefWidth="782.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab1" text="책관리">
+               <content>
+                  <TableView fx:id="BookListTableView" prefHeight="452.0" prefWidth="722.0">
+                    <columns>
+                      <TableColumn prefWidth="104.0" text="책번호" />
+                      <TableColumn minWidth="0.0" prefWidth="141.0" text="이름" />
+                      <TableColumn prefWidth="230.0" text="가격" />
+                      <TableColumn prefWidth="147.0" text="장르" />
+                    </columns>
+                  </TableView>
+               </content></Tab>
+          <Tab fx:id="tab2" text="회원정보 관리">
+               <content>
+                  <TableView fx:id="MemberListTableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="70.0" text="회원번호" />
+                      <TableColumn prefWidth="72.0" text="ID" />
+                        <TableColumn prefWidth="98.0" text="이름" />
+                        <TableColumn prefWidth="136.0" text="주소" />
+                        <TableColumn minWidth="5.0" prefWidth="179.0" text="이메일" />
+                        <TableColumn prefWidth="225.0" text="가입일" />
+                    </columns>
+                  </TableView>
+               </content></Tab>
+            <Tab fx:id="tab21" text="새로운 책 추가">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="bookName" layoutX="153.0" layoutY="132.0" promptText="책 이름" />
+                        <TextField fx:id="bookPrice" layoutX="153.0" layoutY="185.0" promptText="책 가격" />
+                        <TextField fx:id="bookType" layoutX="153.0" layoutY="251.0" promptText="책 장르" />
+                        <Label layoutX="257.0" layoutY="34.0" text="새로운 책 등록">
+                           <font>
+                              <Font size="40.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="290.0" layoutY="136.0" text="책 이름을 입력하세요." />
+                        <Label layoutX="290.0" layoutY="189.0" text="책 가격을 입력하세요." />
+                        <Label layoutX="296.0" layoutY="255.0" text="책의 장르를 입력하세요." />
+                        <Button layoutX="320.0" layoutY="432.0" mnemonicParsing="false" onAction="#createNewBook" text="등록 하기">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="296.0" layoutY="319.0" text="책 이미지 파일" />
+                        <TextField fx:id="bookImg" layoutX="153.0" layoutY="315.0" promptText="이미지 파일명" />
+                        <TextField fx:id="bookCnt" layoutX="153.0" layoutY="372.0" promptText="책수량" />
+                        <Text layoutX="300.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="책 수량" />
+                        <TextField fx:id="bookAuther" layoutX="437.0" layoutY="132.0" promptText="책 저자" />
+                        <Text layoutX="587.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="책의 저자를 입력하세요." />
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</StackPane>
